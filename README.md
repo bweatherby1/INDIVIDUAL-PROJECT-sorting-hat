@@ -1,5 +1,5 @@
 # Sorting Hat
-
+I liked using a whiteboard better than the screen. DBio is pretty limited. Planning can be fun in a mad scientist sort of way. It is not easy to make a button into an image
 ## Goals
 The goal of this project is to test your knowledge and to have a FUN time stretching yourself on your FIRST independent application that will become a part of your portfolio.
 
@@ -55,3 +55,11 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
+
+
+
+BRAD ADDITIONS
+Bootstrap is easy to navigate and splice parts of together
+Adding buttons to images is trickier than just putting the image in the button or i put it in the wrong spot.
+Planning is great but can allow for creative overload.
+After reviewing my white board vision, i put a lot on myself to make something that is more than what is required and perhaps outside my current abilities-we shall see.
