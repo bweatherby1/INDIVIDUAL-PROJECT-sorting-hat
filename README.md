@@ -55,3 +55,12 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
+//Tore down original concept
+//Started over with just the five buttons, filter still works so that function is right.
+// Changed everything from clortho to Hogwarts for simplicities sake and offensive content hidden in video
+// Prioritizing functionality over styling until it works the way it should.
+//Planning was much simpler and easier to understand on the white board, not a fan of dbdiagram.
+//Will readjust issue ticket to match current problems.
+//Fixed div sizing in css to help visualize better.
+//Can't get sort form to work and now my original cards don't show up, i am going to try using some different code to see if that works, then delete and rewrite my own way.
+//RANDOMIZER IS WORKING!!! We have reached MVP i believe.

@@ -18,8 +18,9 @@ house: "Ravenclaw"
   name: "Cedric Diggory",
   house: "Hufflepuff"
 }
-]
+];
 
+const randomHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 
 const renderToDom = (students) => {
   let domString = '';
@@ -30,7 +31,7 @@ const renderToDom = (students) => {
 </div>
 <div class="card-body">
   <p>${student.house}</p>
-  <button onclick="moveWiz()" class="btn btn-danger">Expel!</button>
+  <button id="expel" class="btn btn-danger">Expel!</button>
 </div>
 </div>`
 
@@ -49,6 +50,7 @@ const gButton = document.querySelector("#gb")
  const wButton = document.querySelector("#wb")
  const hButton = document.querySelector("#hb")
  const lButton = document.querySelector(".logo")
+ 
 
 
 const filter = (house) => {
@@ -80,9 +82,22 @@ lButton.addEventListener("click", () => {
 renderToDom(students);
 })
 
+const form = document.querySelector("form")
 
+const createWiz = (event) => {
+event.preventDefault()
 
+  const newWiz = {
+       id: students.length + 1,
+       name: document.querySelector('#newStudentName').value,
+       house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
+  }
+  students.push(newWiz)
+  renderToDom(students)
+  form.reset()
+}
 
+ form.addEventListener('submit', createWiz);
 
 
 
