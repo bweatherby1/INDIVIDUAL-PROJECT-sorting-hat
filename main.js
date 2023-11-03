@@ -88,9 +88,9 @@ const createWiz = (event) => {
 event.preventDefault()
 
   const newWiz = {
-       id: students.length + 1,
-       name: document.querySelector('#newStudentName').value,
-       house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
+    id: students.length + 1,
+    name: document.querySelector('#newStudentName').value,
+     house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
   }
   students.push(newWiz)
   renderToDom(students)
