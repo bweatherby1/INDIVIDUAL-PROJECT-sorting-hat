@@ -1,35 +1,37 @@
 const students = [ {
   id: 1,
-  name: "Larry Popper",
-  mostFun: "Chest Bumps",
-  house:"Griffinsnitch"
+  name: "Harry Potter",
+  house: "Griffindor"
 },
 {
   id: 2,
-  name: "Maco Dalfoy",
-  mostFun: "School Dungeon Raves",
-  house: "Sneakerin"
+  name: "Draco Malfoy",
+  house: "Slytherin"
 },
 {
 id: 3,
-name: "Lucy Lovebad",
-mostFun: "Attending class",
-house: "Whiteclaw"
+name: "Luna Lovegood",
+house: "Ravenclaw"
 },
 {
   id: 4,
-  name: "Dedric Ciggory",
-  mostFun: "A hard day's work",
-  house: "HuffnPuff"
+  name: "Cedric Diggory",
+  house: "Hufflepuff"
 }
-]
+];
+
+const randomHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
+
+<<<<<<< HEAD
 
 
-
+=======
+>>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 const renderToDom = (students) => {
   let domString = '';
   for(student of students) {
     domString += `<div id="studentCards" class="card" style="width: 18rem;">
+<<<<<<< HEAD
     <div class="name"></div>
     <h5 class="name">${student.name}</h5>
     <br>
@@ -40,6 +42,16 @@ const renderToDom = (students) => {
     <p><button  class="btn btn-success">Graduate!</button></p>
     <p><button onclick="moveWiz()" class="btn btn-danger">Expel!</button></p>
     </div>`
+=======
+<div class="card-header">
+<h3>${student.name}</h3>
+</div>
+<div class="card-body">
+  <p>${student.house}</p>
+  <button id="expel" class="btn btn-danger">Expel!</button>
+</div>
+</div>`
+>>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 
   }
     
@@ -55,7 +67,8 @@ const gButton = document.querySelector("#gb")
  const sButton = document.querySelector("#sb")
  const wButton = document.querySelector("#wb")
  const hButton = document.querySelector("#hb")
- const cButton = document.querySelector(".clortho")
+ const lButton = document.querySelector(".logo")
+ 
 
 
 const filter = (house) => {
@@ -71,23 +84,25 @@ let allStudentsArray = []
 
 
 gButton.addEventListener("click", () => {
-filter ("Griffinsnitch");
+filter ("Griffindor");
 })
 sButton.addEventListener("click", () => {
-filter ("Sneakerin");
+filter ("Slytherin");
 })
 wButton.addEventListener("click", () => {
-filter ("Whiteclaw");
+filter ("Ravenclaw");
 })
 hButton.addEventListener("click", () => {
-  filter ("HuffnPuff");
+  filter ("Hufflepuff");
 })
 
-cButton.addEventListener("click", () => {
+lButton.addEventListener("click", () => {
 renderToDom(students);
 })
 
+const form = document.querySelector("form")
 
+<<<<<<< HEAD
 function moveCard() {
   const card = document.getElementById("#name");
   const sourceContainer = document.getElementById("#studentCards");
@@ -99,6 +114,22 @@ function moveCard() {
   }
 }
 
+=======
+const createWiz = (event) => {
+event.preventDefault()
+
+  const newWiz = {
+       id: students.length + 1,
+       name: document.querySelector('#newStudentName').value,
+       house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
+  }
+  students.push(newWiz)
+  renderToDom(students)
+  form.reset()
+}
+
+ form.addEventListener('submit', createWiz);
+>>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 
 
 
