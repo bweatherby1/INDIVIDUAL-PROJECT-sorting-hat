@@ -1,41 +1,38 @@
 const students = [ {
   id: 1,
-  name: "Larry Popper",
-  mostFun: "Chest Bumps",
-  house:"Griffinsnitch"
+  name: "Harry Potter",
+  house: "Griffindor"
 },
 {
   id: 2,
-  name: "Maco Dalfoy",
-  mostFun: "School Dungeon Raves",
-  house: "Sneakerin"
+  name: "Draco Malfoy",
+  house: "Slytherin"
 },
 {
 id: 3,
-name: "Lucy Lovebad",
-mostFun: "Attending class",
-house: "Whiteclaw"
+name: "Luna Lovegood",
+house: "Ravenclaw"
 },
 {
   id: 4,
-  name: "Dedric Ciggory",
-  mostFun: "A hard day's work",
-  house: "HuffnPuff"
+  name: "Cedric Diggory",
+  house: "Hufflepuff"
 }
 ]
 
- 
+
 const renderToDom = (students) => {
   let domString = '';
   for(student of students) {
     domString += `<div id="studentCards" class="card" style="width: 18rem;">
-    <div class="name"></div>
-    <h5 class="name">${student.name}</h5>
-    <p>${student.house}
-    <br>
-    ${student.mostFun}
-    </p>
-    </div>`
+<div class="card-header">
+<h3>${student.name}</h3>
+</div>
+<div class="card-body">
+  <p>${student.house}</p>
+  <button onclick="moveWiz()" class="btn btn-danger">Expel!</button>
+</div>
+</div>`
 
   }
     
@@ -45,11 +42,13 @@ const renderToDom = (students) => {
 
 renderToDom(students)
 
+
+
 const gButton = document.querySelector("#gb")
  const sButton = document.querySelector("#sb")
  const wButton = document.querySelector("#wb")
  const hButton = document.querySelector("#hb")
- const cButton = document.querySelector(".clortho")
+ const lButton = document.querySelector(".logo")
 
 
 const filter = (house) => {
@@ -61,22 +60,41 @@ let allStudentsArray = []
   } 
   renderToDom(allStudentsArray)
 } 
+
+
+
 gButton.addEventListener("click", () => {
-filter ("Griffinsnitch");
+filter ("Griffindor");
 })
 sButton.addEventListener("click", () => {
-filter ("Sneakerin");
+filter ("Slytherin");
 })
 wButton.addEventListener("click", () => {
-filter ("Whiteclaw");
+filter ("Ravenclaw");
 })
 hButton.addEventListener("click", () => {
-  filter ("HuffnPuff");
+  filter ("Hufflepuff");
 })
 
-cButton.addEventListener("click", () => {
+lButton.addEventListener("click", () => {
 renderToDom(students);
 })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const startApp = () => {
+  renderToDom(students);
+}
 startApp()
