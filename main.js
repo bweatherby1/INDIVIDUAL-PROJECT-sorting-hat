@@ -22,27 +22,10 @@ house: "Ravenclaw"
 
 const randomHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 const renderToDom = (students) => {
   let domString = '';
   for(student of students) {
     domString += `<div id="studentCards" class="card" style="width: 18rem;">
-<<<<<<< HEAD
-    <div class="name"></div>
-    <h5 class="name">${student.name}</h5>
-    <br>
-    <p>${student.house}
-    <br>
-    ${student.mostFun}
-    </p>
-    <p><button  class="btn btn-success">Graduate!</button></p>
-    <p><button onclick="moveWiz()" class="btn btn-danger">Expel!</button></p>
-    </div>`
-=======
 <div class="card-header">
 <h3>${student.name}</h3>
 </div>
@@ -51,7 +34,6 @@ const renderToDom = (students) => {
   <button id="expel" class="btn btn-danger">Expel!</button>
 </div>
 </div>`
->>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 
   }
     
@@ -102,19 +84,6 @@ renderToDom(students);
 
 const form = document.querySelector("form")
 
-<<<<<<< HEAD
-function moveCard() {
-  const card = document.getElementById("#name");
-  const sourceContainer = document.getElementById("#studentCards");
-  const targetContainer = document.getElementById("#dth");
-
-  if (card && sourceContainer.contains(card)) {
-      sourceContainer.removeChild(card);
-      targetContainer.appendChild(card);
-  }
-}
-
-=======
 const createWiz = (event) => {
 event.preventDefault()
 
@@ -129,7 +98,6 @@ event.preventDefault()
 }
 
  form.addEventListener('submit', createWiz);
->>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
 
 
 
