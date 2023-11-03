@@ -1,5 +1,5 @@
 # Sorting Hat
-I liked using a whiteboard better than the screen. DBio is pretty limited. Planning can be fun in a mad scientist sort of way. It is not easy to make a button into an image
+
 ## Goals
 The goal of this project is to test your knowledge and to have a FUN time stretching yourself on your FIRST independent application that will become a part of your portfolio.
 
@@ -55,16 +55,6 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
-<<<<<<< HEAD
-
-
-
-BRAD ADDITIONS
-Bootstrap is easy to navigate and splice parts of together
-Adding buttons to images is trickier than just putting the image in the button or i put it in the wrong spot.
-Planning is great but can allow for creative overload.
-After reviewing my white board vision, i put a lot on myself to make something that is more than what is required and perhaps outside my current abilities-we shall see.
-=======
 //Tore down original concept
 //Started over with just the five buttons, filter still works so that function is right.
 // Changed everything from clortho to Hogwarts for simplicities sake and offensive content hidden in video
@@ -74,4 +64,3 @@ After reviewing my white board vision, i put a lot on myself to make something t
 //Fixed div sizing in css to help visualize better.
 //Can't get sort form to work and now my original cards don't show up, i am going to try using some different code to see if that works, then delete and rewrite my own way.
 //RANDOMIZER IS WORKING!!! We have reached MVP i believe.
->>>>>>> 4611ea68d629ebbf86cdb96a1c313f9c5416f2b0
