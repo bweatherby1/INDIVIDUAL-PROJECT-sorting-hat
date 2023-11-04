@@ -53,7 +53,6 @@ const renderToDom = (students) => {
   const deathy = document.querySelector("#deathy");
   deathy.innerHTML = deathString;
 
-  // Set background color based on house
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
     const houseText = card.querySelector('#house').textContent;
