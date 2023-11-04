@@ -75,7 +75,7 @@ h1 {
 
 
 h2 {
-    text-align: center;
+   
     color: gold;
   
 
@@ -100,7 +100,8 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  width: 90%;
+  height: 90%;
 }
 
 .griffindor {
