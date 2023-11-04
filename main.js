@@ -21,7 +21,7 @@ const students = [
   },
 ];
 
-const randomHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
+const studentHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 const deathEaters = [];
 
 const renderToDom = (students) => {
@@ -131,7 +131,7 @@ const createWiz = (event) => {
   const newWiz = {
     id: students.length + 1,
     name: document.querySelector('#newStudentName').value,
-    house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
+    house: studentHouse[Math.floor(Math.random() * studentHouse.length)],
   };
   students.push(newWiz);
   renderToDom(students);
