@@ -75,7 +75,7 @@ h1 {
 
 
 h2 {
-    text-align: center;
+   
     color: gold;
   
 
@@ -95,12 +95,14 @@ flex-wrap: wrap;
 }
 
 .card {
+  width: 100px;
+  height: 200px;
   margin: 1px;
   border: solid black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  
 }
 
 .griffindor {
