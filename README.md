@@ -66,5 +66,19 @@ Think of a way you can expel students without just hiding those divs on the page
 //RANDOMIZER IS WORKING!!! We have reached MVP i believe.
 //For loop used for filter and cards
 //Made significant breakthrough with moving students to the other div using another for loop.
+//Now with MVP achieved, we can move on to loom and preparing the presentation.
 
-Sorting Hat-
+## Sorting Hat
+## Overview
+The sorting hat application is meant to add students to a selected div and also be able to expel them to another.
+## Wireframe
+This was done on a whiteboard as dbdiagram didn't agree with me
+## Walthrough Video
+https://www.loom.com/share/53a5d41214454d94b259a3776438d50f
+## link to sorting hat
+https://sortingcap.netlify.app/
+## Features
+Can add new students to student array.
+Can expel students into deathEaters array.
+Can filter students by house or all.
+Has a dropdown, which was way more difficult to write than the last one.
