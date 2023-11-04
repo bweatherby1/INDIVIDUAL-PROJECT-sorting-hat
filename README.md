@@ -64,3 +64,7 @@ Think of a way you can expel students without just hiding those divs on the page
 //Fixed div sizing in css to help visualize better.
 //Can't get sort form to work and now my original cards don't show up, i am going to try using some different code to see if that works, then delete and rewrite my own way.
 //RANDOMIZER IS WORKING!!! We have reached MVP i believe.
+//For loop used for filter and cards
+//Made significant breakthrough with moving students to the other div using another for loop.
+
+Sorting Hat-
