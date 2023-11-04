@@ -21,7 +21,7 @@ const students = [
   },
 ];
 
-const randomHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
+const studentHouse = ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 const deathEaters = [];
 
 const renderToDom = (students) => {
@@ -53,7 +53,6 @@ const renderToDom = (students) => {
   const deathy = document.querySelector("#deathy");
   deathy.innerHTML = deathString;
 
-  // Set background color based on house
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
     const houseText = card.querySelector('#house').textContent;
@@ -132,7 +131,7 @@ const createWiz = (event) => {
   const newWiz = {
     id: students.length + 1,
     name: document.querySelector('#newStudentName').value,
-    house: randomHouse[Math.floor(Math.random() * randomHouse.length)],
+    house: studentHouse[Math.floor(Math.random() * studentHouse.length)],
   };
   students.push(newWiz);
   renderToDom(students);
